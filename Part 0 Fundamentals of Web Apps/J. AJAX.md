@@ -1,0 +1,1 @@
+Asynchronous JavaScript and XML enabled revolutionary idea of fetching information and updating the page without rerendering 

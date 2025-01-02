@@ -1,0 +1,1 @@
+If there's an src tag in the html structure, the browser fetches the javascript file and immediately begins to execute. The javascript file can make a request to the server to get a file, or to send information to a server.
