@@ -1,0 +1,50 @@
+ You cannot render objects directly in JSX since react is unable to. In React, individual things in  curly brackets {} must be primitives since that's what react can handle.
+ 
+ (If you try rendering objects it will spit the error: Objects are not valid as React Child)
+ 
+ Examples Below:
+
+Note Allowed:
+```js
+const App = () => {
+  const friends = [
+    { name: 'Peter', age: 4 },
+    { name: 'Maya', age: 10 },
+  ]
+
+  return (
+    <div>
+      <p>{friends[0]}</p>
+      <p>{friends[1]}</p>
+    </div>
+  )
+}
+
+export default App
+```
+
+Allowed: 
+```js
+const App = () => {
+  const friends = [
+    { name: 'Peter', age: 4 },
+    { name: 'Maya', age: 10 },
+  ]
+
+  return (
+    <div>
+      <p>{friends[0].name} {friends[0].age}</p>
+      <p>{friends[1].name} {friends[1].age}</p>
+    </div>
+  )
+}
+
+export default App
+```
+
+Note that although arrays are treated as objects, under certain circumstances arrays containing primitive values (values that are allowed to be rendered) can be evaluated inside curly braces. 
+
+To add on an array of primitives can also be passed as a prop into a component, but also objects can. It's just that if an object is passed as a prop into another component, in that component it's properities can be rendered and the object itself unless  you do something like below.
+```js
+<p>{JSON.stringify(friends[0])}</p>  // Renders: {"name":"Peter","age":4}
+```

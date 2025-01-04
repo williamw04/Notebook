@@ -8,63 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c305a71191d98f0e",
+            "id": "753a87c9575c7fed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lesson 0 Fundamentals of Web Apps/E. Document Object Model or Dom.md",
+                "file": "Part 1/B - Javascript/0 Savascript Standard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "E. Document Object Model or Dom"
-            }
-          },
-          {
-            "id": "50ac67dfee883bc5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ReTopics/Callback Functions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Callback Functions"
-            }
-          },
-          {
-            "id": "ac8556c03056a4d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Part 1 Introduction to React/A. -create-react-app.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "A. -create-react-app"
-            }
-          },
-          {
-            "id": "8a3fa500282fdc16",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Part 1 Introduction to React/B. Component.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "B. Component"
+              "title": "0 Savascript Standard"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,12 +72,27 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "8d0ba44c4e490fed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Part 1/A - Introduction to React/3. JSX.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. JSX"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 335.20000000000005
+    "width": 335.20000000000005,
+    "collapsed": true
   },
   "right": {
     "id": "cfb98913b93fd8d1",
@@ -206,46 +178,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a3fa500282fdc16",
+  "active": "753a87c9575c7fed",
   "lastOpenFiles": [
-    "arrow.md",
-    "Part 1 Introduction to React/B. Component.md",
+    "Part 1/A - Introduction to React/4. Multiple Components.md",
+    "Part 1/B - Javascript/0 Savascript Standard.md",
+    "Part 1/B - Javascript",
+    "Part 1/A - Introduction to React/5.  props-passing data to components.md",
+    "Part 1/A - Introduction to React/3. JSX.md",
+    "Part 1/A - Introduction to React/2. Component.md",
+    "Part 1/A - Introduction to React/1. -create-react-app.md",
+    "Part 0 Fundamentals of Web Apps/14. JavaScript fatigue.md",
+    "Part 0 Fundamentals of Web Apps/13. Full-stack web development.md",
+    "Part 0 Fundamentals of Web Apps/12. JavaScript-libraries.md",
+    "Part 0 Fundamentals of Web Apps/11. Single page app.md",
+    "Part 0 Fundamentals of Web Apps/10. AJAX.md",
+    "Part 0 Fundamentals of Web Apps/9.  Forms and HTTP POST.md",
+    "Part 0 Fundamentals of Web Apps/8. Loading a page containing JavaScript - review.md",
+    "Part 0 Fundamentals of Web Apps/7. CSS.md",
+    "Part 0 Fundamentals of Web Apps/6. Manipulating the document object from console.md",
+    "Part 0 Fundamentals of Web Apps/5. Document Object Model or Dom.md",
+    "Part 0 Fundamentals of Web Apps/4. Event handlers and Callback functions.md",
+    "Part 0 Fundamentals of Web Apps/3. Running application logic in the browser.md",
+    "Part 0 Fundamentals of Web Apps/2. Traditional Web Applications.md",
+    "Part 0 Fundamentals of Web Apps/1. HTTP Get.md",
+    "Part 1/A - Introduction to React",
+    "B",
+    "F. Do not render objects.md",
     "ReTopics/Callback Functions.md",
-    "Part 1 Introduction to React/A. -create-react-app.md",
+    "arrow.md",
     "React.Dev/Your First Component.md",
     "ReTopics/JavaScript Function.md",
     "React.Dev",
     "\"ReTopics/Callback-Functions\".md",
-    "ReTopics/Callback-Functions.md",
-    "Lesson 0 Fundamentals of Web Apps/D. Event handlers and Callback functions.md",
-    "\"ReTopics/Callback.md",
     "\"ReTopics",
-    "Lesson 0 Fundamentals of Web Apps/E. Document Object Model or Dom.md",
-    "Lesson 0 Fundamentals of Web Apps/G. CSS.md",
-    "Lesson 0 Fundamentals of Web Apps/J. AJAX.md",
-    "Lesson 0 Fundamentals of Web Apps/I.  Forms and HTTP POST.md",
-    "Part 1 Introduction to React/introdemo/public/vite.svg",
-    "Part 1 Introduction to React/introdemo/package-lock.json",
-    "Part 1 Introduction to React/introdemo/node_modules/es-abstract/tmp.mjs",
-    "Part 1 Introduction to React/introdemo/node_modules/es-abstract/README.md",
-    "Part 1 Introduction to React/introdemo/node_modules/es-abstract/CHANGELOG.md",
-    "Part 1 Introduction to React/introdemo/node_modules/es-abstract/package.json",
-    "Part 1 Introduction to React/introdemo/node_modules/caniuse-lite/README.md",
-    "Part 1 Introduction to React/introdemo/node_modules/caniuse-lite/package.json",
-    "Part 1 Introduction to React/introdemo/node_modules/caniuse-lite/data/regions/ZW.js",
-    "Part 1 Introduction to React/introdemo/node_modules/caniuse-lite/data/features/zstd.js",
-    "Part 1 Introduction to React/introdemo/node_modules/caniuse-lite/data/regions/ZM.js",
-    "Part 1 Introduction to React/introdemo/node_modules/caniuse-lite/data/regions/ZA.js",
-    "Part 1 Introduction to React/introdemo/node_modules/@esbuild/darwin-arm64/README.md",
-    "Part 1 Introduction to React/introdemo/node_modules/eslint-plugin-react/README.md",
-    "Part 1 Introduction to React/introdemo/node_modules/react-dom/README.md",
-    "Part 1 Introduction to React/introdemo/node_modules/vite/README.md",
-    "Part 1 Introduction to React/introdemo/node_modules/vite/LICENSE.md",
-    "Part 1 Introduction to React/introdemo/node_modules/resolve/SECURITY.md",
-    "Part 1 Introduction to React/introdemo/node_modules/rollup/README.md",
-    "Part 1 Introduction to React/introdemo/node_modules/rollup/LICENSE.md",
-    "Part 1 Introduction to React/introdemo/node_modules/ajv/README.md",
-    "Part 1 Introduction to React/introdemo/src/assets/react.svg",
+    "Part 1/A - Introduction to React/introdemo/public/vite.svg",
+    "Part 1/A - Introduction to React/introdemo/package-lock.json",
+    "Part 1/A - Introduction to React/introdemo/node_modules/es-abstract/tmp.mjs",
+    "Part 1/A - Introduction to React/introdemo/node_modules/es-abstract/package.json",
+    "Part 1/A - Introduction to React/introdemo/node_modules/caniuse-lite/package.json",
+    "Part 1/A - Introduction to React/introdemo/node_modules/caniuse-lite/data/regions/ZW.js",
+    "Part 1/A - Introduction to React/introdemo/src/assets/react.svg",
     "images/Pasted image 20241231220925.png",
     "images/20241230180750.png"
   ]

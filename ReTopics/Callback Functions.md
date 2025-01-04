@@ -5,9 +5,9 @@ The user/consumer/client of a call-back based API creates a function and passes 
 
 There are two ways in which callback may be called :synchronous or asynchronous. Synchronous callbacks are called immediately after the invocation of the outer function with no intervening asynchronous tasks, while asynchronous callbacks are called a some later point after an asynchronous operation has completed.
 
-
+### SUBHEADING
 Synchronous vs Asynchronous Callbacks:
-Synchornous: Call back is executed immediately during the execution of the outer function. without delay or asynchronous tasks.
+Synchronous: Call back is executed immediately during the execution of the outer function. without delay or asynchronous tasks.
 Asynchronous: Callback is executed laterm typically after an asynchronous operation (fetching data waiting for a timer)
 
 
