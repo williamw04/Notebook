@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Part 1/B - Javascript/0 Javascript Standard.md",
+                "file": "ReTopics/Javascript Runtime Described.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0 Javascript Standard"
+              "title": "Javascript Runtime Described"
             }
           }
         ],
@@ -222,19 +222,20 @@
   },
   "active": "f68d382abb2bc7a2",
   "lastOpenFiles": [
-    "Part 1/B - Javascript/1. Javascript.md",
-    "Javascript Runtime Described.md",
-    "Screenshot 2025-01-05 at 3.03.05 AM.png",
-    "Screenshot 2025-01-05 at 2.36.19 AM.png",
-    "ReTopics/Javascript Variable Type/Medium Article about let var const.md",
+    "Part 1/A - Introduction to React/4. Multiple Components.md",
+    "Part 1/A - Introduction to React/6. Do not render objects.md",
     "Part 1/B - Javascript/0 Javascript Standard.md",
+    "Part 1/B - Javascript/1. Javascript.md",
+    "ReTopics/Javascript Runtime Described.md",
+    "images/Screenshot 2025-01-05 at 3.03.05 AM.png",
+    "images/Screenshot 2025-01-05 at 2.36.19 AM.png",
+    "ReTopics/Javascript Variable Type/Medium Article about let var const.md",
     "ReTopics/Javascript Functions/Callback Functions.md",
     "ReTopics/Javascript Variable Type/const.md",
     "ReTopics/Javascript Variable Type/let.md",
     "ReTopics/Javascript Variable Type",
     "ReTopics/JavaScript Function.md",
     "ReTopics/Javascript Functions",
-    "Part 1/A - Introduction to React/4. Multiple Components.md",
     "Part 1/B - Javascript",
     "Part 1/A - Introduction to React/5.  props-passing data to components.md",
     "Part 1/A - Introduction to React/3. JSX.md",
