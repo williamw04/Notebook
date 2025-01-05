@@ -1,0 +1,1 @@
+Declares re-assignable, block scoped local variables. During declarization you can initialize it to a value.

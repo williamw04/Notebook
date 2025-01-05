@@ -1,0 +1,1 @@
+Declares non-reassignable local block scoped variable
