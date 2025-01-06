@@ -13,3 +13,6 @@ Asynchronous: Callback is executed laterm typically after an asynchronous operat
 
 #### Event Handlers
 Event handler functions are functions that response to a certain event at a later time. These are a type of Callback Functions.
+
+### Main Questions:
+Defining call back functions, event handlers and promises... async and await... 

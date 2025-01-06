@@ -54,44 +54,91 @@ Here’s how the call stack operates for the code above:
 Now logThreeAndFour(); is called which creates an execution context, and put onto the stack. It's being evaluated invoking a function, but inside that function before it finishes running it bumps into another function and creates the execution context of logThree() invoking another function. 
 
 However the previous isn't finished being evaluated and pause saved for later since it may not be completed running (more code left or just to not lose track since a function technically isn't finished running since all the code hasn't been executed. Gotta wait for the function invoked inside to finish and return) and the new context is put on top and started to be evaluated. 
-#### Recursive Example
-To save explanation ill show the progress of the Call Stack over the duration of the program's execution.
+### Recursive Example – Call Stack Progression
 
-Current Line: console.log('One')
-CallStack: console.log('One') 
-Eval:  console.log('One') 
-Output: One!
+To illustrate how the JavaScript call stack operates during program execution, let's break down the process step by step:
 
-Current Line: console.log('Two')
-CallStack: console.log('Two') 
-Eval: console.log('Two') 
-Output: Two!
+### Call Stack Walkthrough:
 
-Current Line: logThreeAndFour()
-CallStack: logThreeAndFour()
-Starts execution of logThreeAndFour()
+**1. Current Line:** `console.log('One')`
 
-Current Line: logThree()
-CallStack:  logThree() <- logThreeAndFour()
-Starts exe of logThree()
+- **Call Stack:** `console.log('One')`
+- **Evaluation:** Execute `console.log('One')`
+- **Output:** `One!`
+- **Result:** Call stack is empty after `console.log` finishes.
 
-Current Line: console.log("Three!")
-CallStack: console.log("Three!") <- logThree() <- logThreeAndFour()
-Eval:  console.log('Three') 
-Output: Three!
+---
 
-CallStack:logThree() <- logThreeAndFour()
-Eval: logThree() finishes running remove off stack
+**2. Current Line:** `console.log('Two')`
 
-Current Line: console.log("Four!") <-- comes back and starts to run all code inside func
-CallStack: console.log("Four!") <- logThreeAndFour()
-Eval: console.log("Four!")
-Output: console.log("Four!")
+- **Call Stack:** `console.log('Two')`
+- **Evaluation:** Execute `console.log('Two')`
+- **Output:** `Two!`
+- **Result:** Call stack is empty again.
 
-Cur Stack:logThreeAndFour()
-Eval: logThreeAndFour() finishes running remove off stack
+---
 
-Confusing yeah but this illustrates the downsides to single threaded  programs. Often if there's recursion the callstack grows exponentially but multi threaded programs can't really do much about that and that's just the downside to recursion. Can be reduced through memoization/cache but this is a separate discussion.
+**3. Current Line:** `logThreeAndFour()`
+
+- **Call Stack:** `logThreeAndFour()` (New execution context is created)
+- **Starts Execution:** The function `logThreeAndFour` begins executing.
+
+---
+
+**4. Current Line (Inside `logThreeAndFour()`)**: `logThree()`
+
+- **Call Stack:** `logThree() ← logThreeAndFour()`
+- **Starts Execution:** `logThree()` begins execution.
+
+---
+
+**5. Current Line (Inside `logThree()`)**: `console.log('Three!')`
+
+- **Call Stack:** `console.log('Three!') ← logThree() ← logThreeAndFour()`
+- **Evaluation:** Execute `console.log('Three!')`
+- **Output:** `Three!`
+
+---
+
+**6. After `logThree()` Finishes:**
+
+- **Call Stack:** `logThree() ← logThreeAndFour()`
+- **Evaluation:** `logThree()` finishes. Remove it from the stack.
+
+---
+
+**7. Current Line (Back to `logThreeAndFour()`)**: `console.log('Four!')`
+
+- **Call Stack:** `console.log('Four!') ← logThreeAndFour()`
+- **Evaluation:** Execute `console.log('Four!')`
+- **Output:** `Four!`
+
+---
+
+**8. After `logThreeAndFour()` Finishes:**
+
+- **Call Stack:** `logThreeAndFour()`
+- **Evaluation:** `logThreeAndFour()` finishes. Remove it from the stack.
+
+---
+
+**Final State:**
+
+- **Call Stack:** Empty
+
+---
+
+#### Key Clarifications:
+
+- The execution context is **pushed onto the stack** when a function is invoked and **popped off** when the function returns.
+- The function that is currently running will always be at the **top** of the stack.
+- Once the stack is empty, JavaScript is idle until the next task (such as an event or timeout) enters the queue.
+
+---
+
+#### Recursion is slow:
+- **Memoization** and **caching** can optimize recursion by avoiding redundant calculations.
+- Techniques like **tail call optimization** (in some environments) can prevent the call stack from growing during recursion.
 
 #### Large Computational Example
 To come back on track here's another scenario
@@ -102,7 +149,7 @@ In this program longRunningTask is doing a computational straining task which ta
 Why is it that there's only one stack. It's because we're runing code in browser
 
 ### The Solution:
-Asynchronous Callbacks
+Asynchronous tasks. Having tasks that are offloaded from the stack that can be done in the background or that might hold up the application. We don't want the single thread that is handling the application runtime to be held up.
 
 ### Web API's
 If you clones the javascript engine, chrome v8, and tried to grep and look for the DOM or server communication it's not in there. This is because ontop of the Javascript engine is provided an api by the browser that the javascript engine can communicate with. This api and other components (which we will get too) has different and exclusive access to some other allocated threads and memory

@@ -5,6 +5,8 @@ for(var i = 0; i<10;i++) {
 console.log(i)
 ```
 
+### Var
+
 Notice the behavior of the var i in this case. The output would be proper eventhough var i was declared within the for loop. In other programming languages the variable i would not be defined outside the scope of the for loop.
 - `var` is **function-scoped** or **globally scoped** if declared outside any function.
 - The `for` loop does **not create a new scope**.
@@ -80,3 +82,25 @@ Reading...
 ```
 
 so in this case there is no delay but due to the nature of async functions such that it sees the function executes it in the background and moves onto the next line.
+
+### Let
+The issue of function scope variables leads to the addition of let dec. Let variables are bracket bound {} meaning it's bounded within for loops.
+
+### Const
+Const variables are meant to define variables one time and you cannot redefine them. This doesn't not mean you cannot change the properties of objects since that's not reassigning the const variable.
+### Last Example
+```js
+var i
+i = 34
+for(let i =0; i<4; i++){
+ console.log(i)
+}
+console.log(i)
+```
+
+console:
+- 0
+- 1
+- 2
+- 3
+- 34
