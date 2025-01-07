@@ -8,105 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "753a87c9575c7fed",
+            "id": "a9dabc77556c32f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Part 1/B - Javascript/0 Javascript Standard.md",
+                "file": "Part 1/B - Javascript/5. Functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0 Javascript Standard"
-            }
-          },
-          {
-            "id": "ba898535efaf25fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Part 1/B - Javascript/1. Javascript.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1. Javascript"
-            }
-          },
-          {
-            "id": "89729e99b39689a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ReTopics/Javascript Variable Type/Medium Article about let var const.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Medium Article about let var const"
-            }
-          },
-          {
-            "id": "f68d382abb2bc7a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ReTopics/Javascript Runtime Described.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Javascript Runtime Described"
-            }
-          },
-          {
-            "id": "53ad7671683de6d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Part 1/B - Javascript/1. Javascript.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1. Javascript"
-            }
-          },
-          {
-            "id": "01b8a73a981be542",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Part 1/B - Javascript/2. Variables.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2. Variables"
-            }
-          },
-          {
-            "id": "84ad443b9935b9d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Part 1/B - Javascript/3. Arrays.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3. Arrays"
+              "title": "5. Functions"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -243,6 +158,20 @@
               "icon": "lucide-list",
               "title": "Outline of Callback Functions"
             }
+          },
+          {
+            "id": "4d5e7317c817772e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
           }
         ],
         "currentTab": 3
@@ -262,22 +191,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1d510298a204f432",
+  "active": "a9dabc77556c32f7",
   "lastOpenFiles": [
-    "Part 1/B - Javascript/2. Variables.md",
     "Part 1/B - Javascript/3. Arrays.md",
+    "Part 1/B - Javascript/2. Variables.md",
+    "Part 1/B - Javascript/4. Objects.md",
+    "Part 1/B - Javascript/5. Functions.md",
+    "Part 1/A - Introduction to React/1. -create-react-app.md",
+    "Part 0 Fundamentals of Web Apps/4. Event handlers and Callback functions.md",
+    "Part 0 Fundamentals of Web Apps/2. Traditional Web Applications.md",
+    "Part 0 Fundamentals of Web Apps/1. HTTP Get.md",
+    "Part 0 Fundamentals of Web Apps/0.1.-0.6. Exercises.md",
+    "ReTopics/Javascript Functions/Callback Functions.md",
+    "Part 0 Fundamentals of Web Apps/3. Running application logic in the browser.md",
     "Part 1/B - Javascript/1. Javascript.md",
+    "Part 1/A - Introduction to React/6. Do not render objects.md",
+    "Part 1/A - Introduction to React/5.  props-passing data to components.md",
+    "Part 1/A - Introduction to React/4. Multiple Components.md",
+    "Part 1/A - Introduction to React/3. JSX.md",
+    "Part 1/B - Javascript/0 Javascript Standard.md",
     "ReTopics/Javascript Variable Type/Medium Article about let var const.md",
     "ReTopics/Javascript Runtime Described.md",
     "Fleeting Notes.md",
-    "ReTopics/Javascript Functions/Callback Functions.md",
-    "Part 1/A - Introduction to React/4. Multiple Components.md",
-    "Part 1/A - Introduction to React/5.  props-passing data to components.md",
-    "Part 1/A - Introduction to React/3. JSX.md",
     "Part 1/A - Introduction to React/2. Component.md",
-    "Part 1/A - Introduction to React/1. -create-react-app.md",
-    "Part 1/A - Introduction to React/6. Do not render objects.md",
-    "Part 1/B - Javascript/0 Javascript Standard.md",
     "images/Screenshot 2025-01-05 at 3.03.05 AM.png",
     "images/Screenshot 2025-01-05 at 2.36.19 AM.png",
     "ReTopics/Javascript Variable Type/const.md",
@@ -288,13 +224,6 @@
     "Part 1/B - Javascript",
     "Part 0 Fundamentals of Web Apps/14. JavaScript fatigue.md",
     "Part 0 Fundamentals of Web Apps/13. Full-stack web development.md",
-    "Part 0 Fundamentals of Web Apps/12. JavaScript-libraries.md",
-    "Part 0 Fundamentals of Web Apps/11. Single page app.md",
-    "Part 0 Fundamentals of Web Apps/10. AJAX.md",
-    "Part 0 Fundamentals of Web Apps/9.  Forms and HTTP POST.md",
-    "Part 0 Fundamentals of Web Apps/8. Loading a page containing JavaScript - review.md",
-    "Part 0 Fundamentals of Web Apps/7. CSS.md",
-    "Part 0 Fundamentals of Web Apps/6. Manipulating the document object from console.md",
     "Part 1/A - Introduction to React",
     "B",
     "React.Dev",
