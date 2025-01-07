@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Part 1/B - Javascript/5. Functions.md",
+                "file": "Part 1/B - Javascript/3. Objects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Functions"
+              "title": "3. Objects"
             }
           }
         ]
@@ -193,10 +193,16 @@
   },
   "active": "a9dabc77556c32f7",
   "lastOpenFiles": [
-    "Part 1/B - Javascript/3. Arrays.md",
-    "Part 1/B - Javascript/2. Variables.md",
-    "Part 1/B - Javascript/4. Objects.md",
-    "Part 1/B - Javascript/5. Functions.md",
+    "Part 1/B - Javascript/2. Arrays.md",
+    "Part 1/B - Javascript/1. Variables.md",
+    "Part 1/B - Javascript/4. Functions.md",
+    "Part 1/B - Javascript/3. Objects.md",
+    "Part 1/B - Javascript/1. Javascript.md",
+    "Part 1/B - Javascript/0 Javascript Standard.md",
+    "Part 1/A - Introduction to React/6. Do not render objects.md",
+    "Part 1/A - Introduction to React/5. props-passing data to components.md",
+    "Part 1/A - Introduction to React/4. Multiple Components.md",
+    "Part 1/A - Introduction to React/3. JSX.md",
     "Part 1/A - Introduction to React/1. -create-react-app.md",
     "Part 0 Fundamentals of Web Apps/4. Event handlers and Callback functions.md",
     "Part 0 Fundamentals of Web Apps/2. Traditional Web Applications.md",
@@ -204,12 +210,6 @@
     "Part 0 Fundamentals of Web Apps/0.1.-0.6. Exercises.md",
     "ReTopics/Javascript Functions/Callback Functions.md",
     "Part 0 Fundamentals of Web Apps/3. Running application logic in the browser.md",
-    "Part 1/B - Javascript/1. Javascript.md",
-    "Part 1/A - Introduction to React/6. Do not render objects.md",
-    "Part 1/A - Introduction to React/5.  props-passing data to components.md",
-    "Part 1/A - Introduction to React/4. Multiple Components.md",
-    "Part 1/A - Introduction to React/3. JSX.md",
-    "Part 1/B - Javascript/0 Javascript Standard.md",
     "ReTopics/Javascript Variable Type/Medium Article about let var const.md",
     "ReTopics/Javascript Runtime Described.md",
     "Fleeting Notes.md",
