@@ -1,0 +1,1 @@
+this keyword is used to refer to the context of a piece of code that is suppose to run (such as a function's body). This is used in object methods where this refers to the attached object that method is attached to.

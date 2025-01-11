@@ -44,3 +44,13 @@ Node.js is a **JavaScript runtime environment** that allows you to run JavaScrip
 ### ### Refined Version of Your Understanding:
 
 **Node.js is a JavaScript runtime environment built on Google's Chrome V8 engine that allows JavaScript to run outside of the browser, enabling server-side and backend development. It works across platforms (Windows, Linux, macOS) by compiling JavaScript into machine code using the V8 engine. Node.js extends JavaScript by providing APIs (`fs`, `http`, etc.) for server operations, networking, and file system interactions, which are not natively available in browsers. Its event-driven, non-blocking architecture makes it ideal for building scalable and high-performance applications.**
+
+
+Takeaway:
+The javascript runtime environment exists in the browser and on a server/mobile. They both build upon chrome's v8 javascript engine. The v8 engine drives the application and can offload tasks for example in the browser when the web api or call back function is invoked (creates an execution context) and then on the stack it is moved onto the browser for it to handle asynchronously (in the background). When it's finished it's moved into the Task queue where teh event loop will move the finished product back to the call stack in the engine when there's nothing in the stack.
+
+
+Transpilation: is the act of converting code from a high abstraction to another high abstraction. The reason may be:
+- One language to another
+- The browser might not support the latest version of javascript.
+
