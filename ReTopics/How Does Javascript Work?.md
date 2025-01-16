@@ -1,14 +1,20 @@
-### JavaScript Runtime Environment:
+## Preface:
 
 Understanding the JavaScript runtime environment is essential for grasping how your program behaves and why certain issues may arise during execution. This knowledge allows you to diagnose and troubleshoot problems more effectively.
 
 In this section, we will explore how JavaScript manages program execution using a single **Call Stack**. This stack-based execution model plays a key role in how JavaScript handles function calls, processes events, and manages asynchronous code.
 ![[Screenshot 2025-01-05 at 2.36.19 AM.png]]
 
-In this section, we will be diving into how in javascript the program manages the execution of the program while using a single Call Stack.
+Javascript code works by being ran in the browser environment and in the server environment. The environment is the way javascript code is processed compiled and ran. Examples of environments would be the browser and server environments which provide more functionality upon normal javascript. Some functionality provided may be server side operations or browser operations. Depending on where javascript runs i,e the server or the browser the javascript env differs providing different apis.  Across the environments is the core javascript engine and environments contains a call stack, and event loop, a callback queue, other apis etc....
 
-### Call Stack
-In the previous section, we mentioned that JavaScript is **single-threaded**. This means that JavaScript can only perform **one task at a time**.
+### The Javascript Engine:
+The javascript engine is what controls the flow and manages the programs. Think of it as the mastermind providing the requested dependencies, resources, completing and delegating task and determining the sequence in which your program will run. A widely used javascript engine is the chrome V8 javavscript engine. However the mentioned engine has all basic javascript features, and is only a component within the javascript environment and other provided components extends the functionality of javascript. The javascript engine only contains a callstack and a heap.
+
+# The other parts
+
+## The Call Stack
+
+In the previous section, we mentioned that JavaScript is **single-threaded**. This means that JavaScript can only perform **one task at a time**. ^6729ab
 
 The JavaScript engine (such as **Chrome's V8** engine) forms the core of the **runtime environment**. The engine consists of two key components:
 
@@ -146,10 +152,29 @@ To come back on track here's another scenario
 ![[Screenshot 2025-01-05 at 3.03.05 AM.png]]
 In this program longRunningTask is doing a computational straining task which takes a long time to be completed halting the progress of the rest of the program. This is known as a blocking which is slow behavior so the application is slow due to design
 
-Why is it that there's only one stack. It's because we're runing code in browser
+In deep recursion it is important to note that a risk of a stack overflow. The stack is not limitless and has a memory capacity.
 
-### The Solution:
+#### The Solution:
 Asynchronous tasks. Having tasks that are offloaded from the stack that can be done in the background or that might hold up the application. We don't want the single thread that is handling the application runtime to be held up.
 
-### Web API's
+## Asynchronous callbacks and Web API's
+Due to the design of javascript [[#^6729ab]] most of the functions are non blocking since if they were they would halt site due to the single threaded nature (handling one task at a time). Imagine if a site was handling a network request and this was was blocking function. This would stop the rest of the site from functioning like clicking other buttons. This means  we run the code get a callback and run it later.
+
+### Async Callbacks & The Call Stack
+
+```js
+console.log('hi') // execution context is created on the stack, ran and popped
+setTimeout(function() { // exec context created on the stack and disappears 
+	console.log('there');
+},5000);
+console.log('JSConfEU'); // 2nd print statement but what happened to the other console statement?
+```
+
+So what happens is that the async function is offloaded somewhere else to be complete in the background while the javascript engine continues running the program and processing the stack.
+
+Where does it go?
+### Concurrency & The event loop
+There's a different component asides from the javascript runtime (whatever that )
+
 If you clones the javascript engine, chrome v8, and tried to grep and look for the DOM or server communication it's not in there. This is because ontop of the Javascript engine is provided an api by the browser that the javascript engine can communicate with. This api and other components (which we will get too) has different and exclusive access to some other allocated threads and memory
+
