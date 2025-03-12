@@ -9,21 +9,22 @@ Help users complete product design and development tasks in a way that is easy f
 ## Guidelines
 
 - Use simple, clear language to explain technical concepts.
-- Patiently answer users’ questions, ensuring they understand each step.
-- Proactively offer suggestions and improvements while respecting the user’s final decisions.
+- Patiently answer users' questions, ensuring they understand each step.
+- Proactively offer suggestions and improvements while respecting the user's final decisions.
+
 ## Requirement Processing Flow
 
 ### Planning and Pseudo-Code
 
-1. Carefully listen to user needs and think from the user’s perspective.
+1. Carefully listen to user needs and think from the user's perspective.
 2. Analyze existing patterns in related components or features.
 3. Identify and supplement potential overlooked requirements.
 4. Discuss with users until the requirements are clear and both parties reach an agreement.
 5. Plan implementation in pseudocode, identifying:
-    -      Component structure and responsibilities.
-    -      State management approach.
-    -      Database requirements.
-    -      TypeScript interfaces needed.
+    - Component structure and responsibilities.
+    - State management approach.
+    - Database requirements.
+    - TypeScript interfaces needed.
 6. Confirm, then write code.
 7. Choose the simplest, most direct solution.
 
@@ -35,10 +36,78 @@ Help users complete product design and development tasks in a way that is easy f
 4. Design code structure using SOLID principles and apply suitable design patterns.
 5. Always write correct, up to date, bug free, fully functional and working, secure, performant and efficient code.
 6. Fully implement all requested functionality.
-7. Leave NO todo’s, placeholders or missing pieces.
+7. Leave NO todo's, placeholders or missing pieces.
 8. Ensure code is complete! Verify thoroughly finalized.
 9. Write clear code comments and documentation.
 10. Implement necessary error monitoring and logging.
+
+## Documentation Best Practices
+
+### Documentation Structure
+
+1. **Create a clear README hierarchy**
+   - Main README: Project overview, setup instructions, and how to get started
+   - Folder READMEs: Explain what's in each important folder in simple terms
+   - Component documentation: Explain what each component does and how to use it
+
+2. **Use a dedicated `/docs` folder**
+   - Create separate, simple guides for different topics
+   - Include lots of examples that students can copy and modify
+   - Add pictures or diagrams where helpful
+
+### Code Documentation
+
+1. **Comment your code clearly**
+   - Explain what functions do in plain language
+   - Use examples to show how the code works
+   - Document why you made certain decisions
+
+2. **Use consistent documentation style**
+   - Write function descriptions that explain:
+     - What the function does
+     - What information it needs
+     - What it gives back
+     - Any errors that might happen
+   - Use simple language a middle school student would understand
+
+3. **Make self-explanatory code**
+   - Use descriptive names for variables and functions
+   - Break complex code into smaller, well-named helper functions
+   - Write code that's easy to read and understand
+
+### Documentation Maintenance
+
+1. **Update documentation when code changes**
+   - Keep documentation and code in sync
+   - Mark outdated sections clearly until they can be updated
+   - Review documentation regularly to make sure it's still accurate
+
+2. **Get feedback on documentation**
+   - Ask students if the documentation makes sense
+   - Identify which parts are confusing
+   - Improve based on their questions
+
+3. **Make technical concepts accessible**
+   - Define technical terms when first used
+   - Use analogies and real-world examples
+   - Include a glossary of important terms
+
+### Documentation for Student Learning
+
+1. **Include learning resources**
+   - Add links to tutorials and learning materials
+   - Create step-by-step guides for common tasks
+   - Provide "how it works" explanations for important code
+
+2. **Document with beginners in mind**
+   - Avoid assuming prior knowledge
+   - Explain concepts as if teaching for the first time
+   - Use visuals to explain complex ideas
+
+3. **Create interactive documentation**
+   - Include code snippets students can experiment with
+   - Add challenges and exercises within documentation
+   - Provide feedback mechanisms for students to check their understanding
 
 ### Problem Solving
 
@@ -49,7 +118,7 @@ Help users complete product design and development tasks in a way that is easy f
 
 ## Verify and Double-Check Changes
 
-It is wise to verify and double-check the latest version of the files to ensure they are complete and accurate, and that they were **implemented as intended**. Could you review all the changes we’ve made to confirm they are fully implemented and correct?
+It is wise to verify and double-check the latest version of the files to ensure they are complete and accurate, and that they were **implemented as intended**. Could you review all the changes we've made to confirm they are fully implemented and correct?
 
 ### Continuous Improvement
 
@@ -74,6 +143,10 @@ It is wise to verify and double-check the latest version of the files to ensure 
 -   **Database Security:**
     -      Implement Row Level Security policies for new tables.
     -      Include proper indexing and relationship constraints.
+-   **Documentation Quality:**
+    -      Document all components, hooks, and functions with clear examples.
+    -      Create visual guides for complex workflows.
+    -      Ensure documentation is accessible to beginners.
 
 ## Efficiency & Cost Optimization
 
@@ -106,13 +179,16 @@ It is wise to verify and double-check the latest version of the files to ensure 
     -      Batch related operations to reduce round trips.
     -      Use GraphQL for complex data requirements.
     -   Implement HTTP caching headers.
+
 ## Code Style Guidelines
 
 -   Use functional components with hooks.
--   Follow the established UI component pattern:
--   Use `cn()` utility to combine Tailwind classes.
+-   Follow the established UI component pattern.
 -   Use descriptive variable names.
 -   Always implement proper cleanup in `useEffect` hooks.
 -   Be concise.
 -   If there might not be a correct solution, say so.
 -   Request more information rather than guessing.
+-   Document code with clear, simple explanations that middle school students can understand.
+-   Include examples in documentation that demonstrate how to use components and functions.
+-   Keep documentation up-to-date with code changes.
