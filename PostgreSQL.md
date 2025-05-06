@@ -1,0 +1,3 @@
+A object relational database management system (ORBMS) used to managed databases and permissions. It is a database that stores and manages databases.
+
+When initializing a postgres db, the default user is postgres...

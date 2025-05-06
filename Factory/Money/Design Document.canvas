@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"5cb22c3ece5cde1f","type":"text","text":"PostgreSQL Database\n","x":-360,"y":-40,"width":250,"height":50,"color":"2"},
+		{"id":"47cee59138bbaaa5","type":"text","text":"Browser Automation","x":-360,"y":-420,"width":250,"height":60,"color":"6"},
+		{"id":"411340b09c52a134","type":"text","text":"Gmail Scraper Application","x":-485,"y":250,"width":250,"height":60,"color":"6"},
+		{"id":"76cda653dfac7af5","type":"text","text":"Google token exchange server","x":-485,"y":520,"width":250,"height":60},
+		{"id":"eb88d59eff312568","type":"text","text":"Schema\nEmails, Password, order_status, code?","x":-840,"y":-314,"width":250,"height":104},
+		{"id":"d0c9f2684a8e977c","type":"text","text":"Access To Gmail Check For New Emails\n","x":-1090,"y":250,"width":250,"height":60},
+		{"id":"e8212906ece1b304","type":"text","text":"For emails that receives a \nmembership card...","x":-1090,"y":120,"width":250,"height":60},
+		{"id":"c6dab882203ae7a3","type":"text","text":"Google auth server","x":93,"y":250,"width":250,"height":60},
+		{"id":"19fe76633355620e","type":"text","text":"User approves somehow????","x":93,"y":402,"width":250,"height":60},
+		{"id":"2c874608be7368a3","type":"text","text":"Checkout Product","x":343,"y":-100,"width":250,"height":60},
+		{"id":"0c09b95c2d72b3aa","type":"text","text":"Creates New Browser","x":-32,"y":-374,"width":250,"height":60},
+		{"id":"44333a8a37e88927","type":"text","text":"We could parallelize this, or have it running one at a time.\n\nNothing is changed until the operation finishes. Ensures operations are atomics\n","x":-1200,"y":494,"width":392,"height":172},
+		{"id":"53eaae640bbeed46","x":-1195,"y":425,"width":250,"height":60,"type":"text","text":"How Fast or much we do it"},
+		{"id":"234ead9226d6d0d6","x":-1254,"y":693,"width":309,"height":287,"type":"text","text":"Considerations To Avoid Detection:\n- Different Cards\n- Different Carts\n- Small batches?\n- Smaller orders?"}
+	],
+	"edges":[
+		{"id":"347c44c2d0213e5f","fromNode":"47cee59138bbaaa5","fromSide":"bottom","toNode":"5cb22c3ece5cde1f","toSide":"top","label":"Step 1:\nFetches user information"},
+		{"id":"defe47edc235ce47","fromNode":"5cb22c3ece5cde1f","fromSide":"top","toNode":"0c09b95c2d72b3aa","toSide":"left","color":"3"},
+		{"id":"393e81016643d675","fromNode":"0c09b95c2d72b3aa","fromSide":"right","toNode":"2c874608be7368a3","toSide":"left","color":"4","label":"Step 2"},
+		{"id":"1f40ed8dd44681d3","fromNode":"2c874608be7368a3","fromSide":"bottom","toNode":"5cb22c3ece5cde1f","toSide":"right","color":"4","label":"Step 3:\nUpdate order_status"},
+		{"id":"bcb1a9cdfef60678","fromNode":"5cb22c3ece5cde1f","fromSide":"right","toNode":"0c09b95c2d72b3aa","toSide":"bottom","color":"4","label":"Repeat:\nUntil all fetched accs ran"},
+		{"id":"401b166573332fb3","fromNode":"c6dab882203ae7a3","fromSide":"bottom","toNode":"19fe76633355620e","toSide":"top"},
+		{"id":"664609a8695a6de7","fromNode":"19fe76633355620e","fromSide":"right","toNode":"c6dab882203ae7a3","toSide":"right","label":"Request approved"},
+		{"id":"038bf3b596955afa","fromNode":"411340b09c52a134","fromSide":"right","toNode":"c6dab882203ae7a3","toSide":"left","label":"Step 1:\nOauth 2.0"},
+		{"id":"b62515c89f03830f","fromNode":"c6dab882203ae7a3","fromSide":"top","toNode":"411340b09c52a134","toSide":"top","label":"Token Sent back"},
+		{"id":"3afddd2dce7da2b3","fromNode":"411340b09c52a134","fromSide":"bottom","toNode":"76cda653dfac7af5","toSide":"top","label":"Token"},
+		{"id":"3bca8d191bbf449c","fromNode":"76cda653dfac7af5","fromSide":"right","toNode":"411340b09c52a134","toSide":"bottom","label":"Valid Session"},
+		{"id":"2b169c69c880c256","fromNode":"411340b09c52a134","fromSide":"left","toNode":"d0c9f2684a8e977c","toSide":"right","label":"Step 2: Access \nauthorized"},
+		{"id":"579dc44eb3c7ed4f","fromNode":"d0c9f2684a8e977c","fromSide":"top","toNode":"e8212906ece1b304","toSide":"bottom"},
+		{"id":"8888fe2469b3a4a3","fromNode":"e8212906ece1b304","fromSide":"top","toNode":"5cb22c3ece5cde1f","toSide":"left","label":"Updating email row\nwith new code"}
+	]
+}
